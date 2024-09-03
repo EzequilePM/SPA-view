@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda</title>
+    <link rel="stylesheet" href="../css/ayuda.css">
+    <script src="https://kit.fontawesome.com/05535acec9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="main">
+           <div class="info-basic">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="../img/logo.png" alt="logo">
+                    </a>
+                </div>
+                
+           </div>
+            <div class="nav-form">
+                <form action="">
+                    <input class="nav" type="search" placeholder="Buscar" name="q" autocomplete="off">
+                </form>
+                <nav class="navbar">
+                    <a href="../html/index.html">Nuevo</a>
+                    <a href="../html/index.html">Mas Popular</a>
+                    <a href="../html/index.html">Envios Gratis</a>
+                    <a href="../html/index.html">50%</a>
+                </nav>
+            </div>
+            <div class="data-acount">
+                <div class="full-ofert"></div>
+                <div class="basic-acount">
+                    <a href="ayuda.html">Ayuda</a>
+                    <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    <a href=""><i class="fa fa-bell" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+        <div class="ayuda">
+            <h2>Preguntas Frecuentes</h2>
+        <div class="faq">
+            <h3>¿Cómo puedo realizar un pedido?</h3>
+            <p>Puedes realizar un pedido navegando por nuestro catálogo, añadiendo los productos que deseas al carrito, y luego completando el proceso de compra en la página del carrito.</p>
+        </div>
+
+        <div class="faq">
+            <h3>¿Cuáles son las opciones de pago disponibles?</h3>
+            <p>Aceptamos pagos con tarjetas de crédito, débito, y PayPal. También puedes utilizar transferencias bancarias en algunos casos.</p>
+        </div>
+
+        <div class="faq">
+            <h3>¿Cómo puedo rastrear mi pedido?</h3>
+            <p>Después de realizar tu pedido, recibirás un correo electrónico con un enlace para rastrear el estado de tu envío.</p>
+        </div>
+
+        <div class="faq">
+            <h3>¿Cuál es la política de devoluciones?</h3>
+            <p>Nuestra política de devoluciones te permite devolver productos dentro de los 30 días posteriores a la compra. Para más detalles, consulta nuestra página de políticas.</p>
+        </div>
+
+        <h2>Recursos Útiles</h2>
+        <div class="resources">
+            <ul>
+                <li><a href="#">Guía de Usuario</a></li>
+                <li><a href="terminosycondiciones.html">Términos y Condiciones</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Contacto de Soporte</a></li>
+            </ul>
+            <script>               
+                const faqs = document.querySelectorAll('.faq h3');
+                faqs.forEach(faq => {
+                    faq.addEventListener('click', function() {
+                        this.nextElementSibling.style.display = 
+                            this.nextElementSibling.style.display === 'block' ? 'none' : 'block';
+                    });
+                });
+            </script>
+</body>
+</html>
