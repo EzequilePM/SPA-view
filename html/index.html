@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxInTheBox</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://kit.fontawesome.com/05535acec9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="main">
+           <div class="info-basic">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="../img/logo.png" alt="logo">
+                    </a>
+                </div>
+                
+           </div>
+            <div class="nav-form">
+                <form action="">
+                    <input class="nav" type="search" placeholder="Buscar" name="q" autocomplete="off">
+                </form>
+                <nav class="navbar">
+                    <a href="index.html">Nuevo</a>
+                    <a href="index.html">Mas Popular</a>
+                    <a href="index.html">Envios Gratis</a>
+                    <a href="index.html">50%</a>
+                </nav>
+            </div>
+            <div class="data-acount">
+                <div class="full-ofert"></div>
+                <div class="basic-acount">
+                    <a href="ayuda.html">Ayuda</a>
+                    <a onclick="orderSummary()"><i class="fa fa-shopping-cart"></i></a>    
+                    <a onclick="orderSummary()" id="productCont"></a>
+                    <a onclick="orderSummary()"><i class="fa fa-bell" onclick="orderSummary()" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+        
+    <section class="background-container">
+        <div class="blur-overlay">  
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="slide"><img src="../img/img1.jpeg" alt="Imagen 1"></div>
+                    <div class="slide"><img src="../img/img2.jpeg" alt="Imagen 2"></div>
+                    <div class="slide"><img src="../img/img3.jpeg" alt="Imagen 3"></div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                <script src="../js/carrusel.js"></script>
+            </div>
+        </div>
+    </section>
+    <section class="background-catalogo">
+        <div class="catalogo">
+            <h2>Lo mas buscado</h2>
+            <div class="catalogo-grid">
+                <div class="catalogo-item">
+                    <img src="../img/mesa.jpg" alt="Producto 1">
+                    <div class="catalogo-info">
+                        <h3>Mesa De Madera</h3>
+                        <h4>25000$</h4>
+                        <p>Mesa Cuadrada De Madera De Haya De 80 x 80 cm</p>
+                        <button class="cart-button" onclick="addTocart('Mesa De Madera', 25000, 3)">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="catalogo-item">
+                    <img src="../img/silla.jpg" alt="Producto 2">
+                    <div class="catalogo-info">
+                        <h3>Silla De Madera</h3>
+                        <h4>12000$</h4>
+                        <p>Silla Basica De Madera De Haya Alba</p>
+                        <button class="cart-button" onclick="addTocart('Silla De Madra', 12000, 2)">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="catalogo-item">
+                    <img src="../img/lampara.webp" alt="Producto 3">
+                    <div class="catalogo-info">
+                        <h3>Lampara</h3>
+                        <h4>7500$</h4>
+                        <p>Lámpara De Mesa de Escritorio
+                            Velador Led 10w Nórdico Madera | Envío Gratis
+                        </p>
+                        <button class="cart-button" onclick="addTocart('lampara de mesa', 7500, 1)">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <script src="../js/main.js"></script>
+    <script src="../js/Carrusel.js"></script>
+    </body>
+
+</html>
